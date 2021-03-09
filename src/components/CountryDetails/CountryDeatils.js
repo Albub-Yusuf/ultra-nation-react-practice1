@@ -81,15 +81,19 @@ if(borders){
                 <p>Name : {name}</p>
             <p>Capital : {capital}</p>
              <p>Population : {population}</p>
-             <p>Area : {area}</p>
-             <p>Region : {region}</p>
-             <div>Borders : { border.map((border) => <span style={{marginLeft:'5px', padding:'3px', borderRadius:'5px',textAlign:'center', background:'dimGrey',color:'white'}} key={country.alpha3Code}> {border}  </span>)}</div>
-             <p>Subregion : {subregion}</p> 
+             <p>Area : {area} km<sup>2</sup></p>
+             
              <p>Languages :  
              {
                  language.map((language) => <span key={country.alpha3Code}> {language}, </span>)
              }
              </p> 
+
+             <p>Region : {region}</p>
+             <p>Subregion : {subregion}</p> 
+
+             <div>Borders : { border.map((border) => <span style={{marginLeft:'5px', padding:'3px', borderRadius:'5px',textAlign:'center', background:'dimGrey',color:'white'}} key={country.alpha3Code}> {border}  </span>)}</div>
+            <br></br>
             <Link to={`/`} ><Button variant="contained" color="primary">Back</Button></Link>
     
            
